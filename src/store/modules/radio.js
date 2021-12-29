@@ -23,7 +23,7 @@ export default {
     updateSelectedStation (state, station) {
       state.selectedStation = station
       state.paused = false
-      state.selectedStation.altUrl = "http://pawka.ru:3000/api/retranslator?id=" + station.id
+      state.selectedStation.altUrl = "https://pawka.ru/api/retranslator?id=" + station.id
       console.log(state.selectedStationAltUrl)
     },
     updateselectedCountry (state, country) {
@@ -44,7 +44,7 @@ export default {
       context.commit('updatePlayer', player)
     },
     async fetchHistory (context, stationId = 15016) {
-      let answer = await fetch('http://pawka.ru:3000/api/history?id=' + stationId)
+      let answer = await fetch('https://pawka.ru/api/history?id=' + stationId)
       let answerJson = await answer.json()
         .catch((e) => {
           console.log(e)
@@ -53,7 +53,7 @@ export default {
       context.commit('updateStationHistory', answerJson)
     },
     async fetchCountries (context) {
-      let countriesCodes = await fetch('http://pawka.ru:3000/api/countries')
+      let countriesCodes = await fetch('https://pawka.ru/api/countries')
         .then((res) => res.json())
         .catch((e) => {
           console.log(e)
@@ -62,7 +62,7 @@ export default {
       context.commit('updateCountries', countriesCodes)
     },
     async fetchCountryStations (context, code = 'RECORD') {
-      let stations = await fetch('http://pawka.ru:3000/api/countriesStations?code=' + code)
+      let stations = await fetch('https://pawka.ru/api/countriesStations?code=' + code)
         .then((res) => res.json())
         .catch((e) => {
           console.log(e)
