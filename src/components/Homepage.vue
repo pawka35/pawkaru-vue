@@ -1,17 +1,17 @@
 <template>
   <v-container class="mt-5">
     <v-row class="mt-5 justify-center">
-      <v-col class="elevation-24 col-6 rounded-xs">
-        <v-row class="justify-center mt-10 text-h2">
+      <v-col class="elevation-24 col-6 rounded-xs font-weight-light">
+        <v-row class="justify-center mt-10 text-h2 font-weight-regular">
           Hello, wanderer!
         </v-row>
-        <v-row class="justify-center subtext mt-6">
+        <v-row class="justify-center subtext mt-6 p-12">
           I have nothing to say you right now.
         </v-row>
-        <v-row class="justify-center subtext">
+        <v-row class="justify-center subtext mt-6">
           Look in vk, skype etc.
         </v-row>
-        <v-row class="justify-end mr-10 subtext">
+        <v-row class="justify-end mr-10 subtext mt-6">
           <p>Thank you for visit.</p>
         </v-row>
       </v-col>
