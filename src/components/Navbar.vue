@@ -41,11 +41,11 @@
             </div>
             <div class="col subtitle-2">
               <div>
-                <span class="font-weight-black">Country</span> :
+                <span class="font-weight-black"><v-icon dark>mdi-google-maps</v-icon></span>
                 {{ selectedStateCountry.name }}
               </div>
               <div>
-                <span class="font-weight-black">Station</span>:
+                <span class="font-weight-black"><v-icon dark>mdi-access-point</v-icon></span>
                 {{ selectedStateStation.title }}
               </div>
             </div>
