@@ -69,7 +69,7 @@ function snakeGame() {
   let context = canvas.getContext("2d"); //канвас
 
   canvas.width = window.innerWidth - 120; //ширина канваса
-  canvas.height = window.innerHeight - 100; //высота канваса
+  canvas.height = window.innerHeight - 120; //высота канваса
 
   document.getElementById("close").addEventListener("click", function () {
     CloseCongratulation(true);
