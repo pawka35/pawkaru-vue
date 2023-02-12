@@ -8,7 +8,7 @@
 
       <canvas
         id="gameCanvas"
-        class="col s12 z-depth-5"
+        class="col-12 z-depth-5"
         width="500px"
         height="500px"
       ></canvas>
